@@ -1,149 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            text-align: center;
-            font-size: 2em;
-        }
-        nav {
-            background: #0779e4;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            padding-right: 15px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        }
-        .profile-img {
-            max-width: 300px;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-            background: #f9f9f9;
-        }
-        .work-images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        .work-images img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-        }
-        .social-links {
-            text-align: center;
-            padding: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #0779e4;
-            text-decoration: none;
-            font-size: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavya's Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-        </div>
-    </header>
 
+  <!-- Navigation Bar -->
+  <header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#work">Work Experience</a>
-        <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="/api/placeholder/300/300" alt="Your Profile Picture" class="profile-img">
-            <p>Hi! I'm [Your Name], a student passionate about [your interests]. I love creating innovative solutions and exploring new technologies.</p>
-        </section>
+  <!-- Main Wrapper -->
+  <div class="main-wrapper">
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Brief description of the project and technologies used.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Brief description of the project and technologies used.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Brief description of the project and technologies used.</p>
-                </div>
+    <!-- Section 1: About Me -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <img src="images/hero-image.jpg" style="width: 190px; border-radius: 1rem; margin-bottom: 1rem;">
+      <p>Hi, I’m Kavya! I’m a passionate computer science student with a keen interest in fintech and engineering. As the first in my family to pursue a career in technology, I’m committed to empowering others, especially women and non-binary individuals, to break into tech and engineering fields. Through my projects, mentorship, and community involvement, I aim to foster collaboration and innovation, all while pushing the boundaries of creativity and problem-solving. When I’m not coding, I’m exploring new ideas, designing interactive experiences, and learning new ways to combine technology with art.</p>
+    </section>
+
+    <!-- Section 2: Flip Cards -->
+    <section class="flip-cards" id="explore">
+      <h2>Let's Explore</h2>
+      <div class="card-container">
+
+        <!-- Card 1 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>FIRST-GEN</h3>
+              <h4>My Journey</h4>
             </div>
-        </section>
-
-        <section id="work">
-            <h2>Student Aide Work</h2>
-            <div class="work-images">
-                <img src="/api/placeholder/200/200" alt="Work Image 1">
-                <img src="/api/placeholder/200/200" alt="Work Image 2">
-                <img src="/api/placeholder/200/200" alt="Work Image 3">
+            <div class="flip-card-back">
+              <p>As a first-generation college student and the first woman in my family to pursue engineering, navigating tech hasn't just been about learning code—it's been about breaking barriers. Every class, project, and late-night debugging session has been a step toward rewriting what’s possible for my family and for others like me. I’m deeply committed to opening doors for more students from underrepresented backgrounds to thrive in tech.</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section id="contact" class="social-links">
-            <h2>Connect With Me</h2>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="mailto:youremail@example.com">Email</a>
-        </section>
-    </div>
+        <!-- Card 2 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>WOMEN IN ENGINEERING PROGRAMS @ UIC</h3>
+              <h4>Student Lead</h4>
+            </div>
+            <div class="flip-card-back">
+              <p>Through Women in Engineering Programs (WIEP) at UIC, I lead technical workshops, mentor students, and build spaces where women and non-binary engineers can thrive. From teaching Python and Arduino basics to organizing panels with engineers from Google and Knowles, my goal is to foster both technical confidence and community. We’re not just building robots—we’re building futures.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>PROJECTS</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Right now, I’m co-developing an HR simulation platform designed for business students—one that’s currently in the process of acquiring VC funding. The project blends storytelling, decision-making, and UX design, giving users a gamified way to understand human resource strategies. I'm also taking a creative coding class that lets me explore sound, visuals, and interactivity through p5.js, using art and code to push the boundaries of what tech can express.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>My Future Goals & Interests</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>I’m working toward a future where I can build my own startup—or join a mission-driven team—at the intersection of fintech, UX design, and social impact. I’m particularly interested in creating tools that support financial transparency and help artists navigate the challenges of generative AI. I want to build technology that feels human, accessible, and rooted in equity.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>Email me at: kavyapatel1222@gmail.com</p>
+      <p>LinkedIn: www.linkedin.com/in/kavya-patel-780314280</p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kavya S. Patel</p>
+  </footer>
+
 </body>
 </html>
